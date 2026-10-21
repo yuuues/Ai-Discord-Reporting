@@ -135,7 +135,7 @@ LLM_MODEL=deepseek-flash
 | `REPORT_CHUNK_SIZE` | `150` | Messages per chunk during Map-Reduce summarization (minimum `20`). |
 | `REPORT_INCLUDE_CHANNELS` | *(empty)* | Optional comma-separated allowlist of channel names or IDs to export (e.g., `chat,support` matches `#💬-chat` and `#🆘-support`). |
 | `REPORT_EXCLUDE_CHANNELS` | *(empty)* | Comma-separated channel names or IDs to skip during export (defaults to empty in `src/config.js`; `.env.example` pre-populates a sample list `announcements,rules,...`). |
-| `REPORT_QA_CHANNELS` | `question,questions,pregunta,preguntas,duda,dudas,help,ayuda,support,soporte,faq,troubleshoot,troubleshooting,bug,bugs,issue,issues,install,installation,setup,ask` | Comma-separated patterns used to classify text channels as Q&A channels (`channelType: "qa"`). Discord Forum channels (`type === 15`) are always classified as `"forum"`. |
+| `REPORT_QA_CHANNELS` | `question, questions, pregunta, preguntas, duda, dudas, help, ayuda, support, soporte, faq, troubleshoot, troubleshooting, bug, bugs, issue, issues, install, installation, setup, ask` | Comma-separated patterns used to classify text channels as Q&A channels (`channelType: "qa"`). Discord Forum channels (`type === 15`) are always classified as `"forum"`. |
 | `DATA_DIR` | `data` | Base directory where `exports/` and `reports/` are written. |
 
 ---
