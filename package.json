@@ -1,0 +1,28 @@
+{
+  "name": "discord-channel-summarizer",
+  "version": "1.0.0",
+  "description": "Two-phase CLI tool to export Discord server chat & forum histories and generate Markdown reports with DeepSeek.",
+  "type": "module",
+  "main": "src/analyze-server-cli.js",
+  "scripts": {
+    "export-server": "node src/analyze-server-cli.js --export",
+    "generate-report": "node src/analyze-server-cli.js --report",
+    "analyze-server": "node src/analyze-server-cli.js",
+    "list-channels": "node src/analyze-server-cli.js --list-channels",
+    "demo": "node src/demo-cli.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "discord",
+    "cli",
+    "summarizer",
+    "llm",
+    "deepseek",
+    "openai",
+    "ollama"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
